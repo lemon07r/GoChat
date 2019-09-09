@@ -28,7 +28,8 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		port = "4747"
+		log.Fatal("$PORT must be set, defaulting to: " + port)
 	}
 
 	http.Handle("/", http.FileServer(http.Dir("./public")))
@@ -36,7 +37,7 @@ func main() {
 	http.HandleFunc("/new/user", registerNewUser)
 	http.HandleFunc("/pusher/auth", pusherAuth)
 
-	log.Fatal(http.ListenAndServe(port, nil))
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
 func registerNewUser(rw http.ResponseWriter, req *http.Request) {
