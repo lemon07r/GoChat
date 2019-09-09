@@ -1,0 +1,32 @@
+{
+	"ImportPath": "github.com/lemon07r/gochat",
+	"GoVersion": "go1.13",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/pusher/pusher-http-go",
+			"Comment": "v4.0.0-3-g4363133",
+			"Rev": "4363133c71196e68af9e5c25cffb37ffa2d8fd74"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/internal/subtle",
+			"Rev": "094676da4a83be5288d281081bba63a173ce6772"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/nacl/secretbox",
+			"Rev": "094676da4a83be5288d281081bba63a173ce6772"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/poly1305",
+			"Rev": "094676da4a83be5288d281081bba63a173ce6772"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/salsa20/salsa",
+			"Rev": "094676da4a83be5288d281081bba63a173ce6772"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/cpu",
+			"Rev": "f460065e899abee61eb86816fd1fd684ea5a0f26"
+		}
+	]
+}
